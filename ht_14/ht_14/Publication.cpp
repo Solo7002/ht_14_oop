@@ -43,16 +43,3 @@ int Publication::getYear() const
 {
 	return year;
 }
-
-void Publication::show() const
-{
-	cout << "\t" << type << "\n";
-	cout << "Name: " << name << "\n";
-	cout << "Author: " << author << "\n";
-	cout << "Year: " << year << "\n";
-}
-
-string Publication::type() const
-{
-	return "Publication";
-}

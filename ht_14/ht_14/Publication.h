@@ -8,6 +8,7 @@ using std::string;
 
 class Publication
 {
+protected:
 	string name;
 	string author;
 	int year;
@@ -23,7 +24,7 @@ public:
 	string getAuthor()const;
 	int getYear()const;
 
-	void show()const;
-	string type()const;
+	virtual void show()const = 0;
+	virtual string type()const = 0;
 };
 
