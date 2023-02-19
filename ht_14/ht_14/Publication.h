@@ -24,5 +24,6 @@ public:
 	int getYear()const;
 
 	void show()const;
+	string type()const;
 };
 
