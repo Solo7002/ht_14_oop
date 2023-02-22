@@ -7,6 +7,6 @@ using std::string;
 
 int main()
 {
-
+	
 	return 0;
 }
