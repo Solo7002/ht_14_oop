@@ -28,3 +28,23 @@ string BookException::showMessage() const
 {
 	return "Book Exception: "+name+"; Error string without any symbols";
 }
+
+
+
+
+
+EditionYearException::EditionYearException()
+{
+	name = "nn";
+}
+
+EditionYearException::EditionYearException(string name)
+	:PublicationException(name)
+{
+
+}
+
+string EditionYearException::showMessage() const
+{
+	return "Year Exception: " + name + "; Error! Undefined year! You can't write that year!";
+}
