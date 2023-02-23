@@ -33,9 +33,10 @@ public:
 
 class EditionYearException : public PublicationException
 {
+	int year;
 public:
 	EditionYearException();
-	EditionYearException(string name);
+	EditionYearException(string name, int year);
 
 	string showMessage()const override;
 };

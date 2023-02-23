@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<string>
+#include"Exceptions.h"
 using std::cout;
 using std::cin;
 using std::endl;

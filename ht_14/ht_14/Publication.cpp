@@ -9,6 +9,14 @@ Publication::Publication()
 
 Publication::Publication(string name, string autor, int year)
 {
+	if (name.empty())
+	{
+		throw new BookException(name);
+	}
+	if (year < 1000)
+	{
+		throw new EditionYearException(name, year);
+	}
 	this->name = name;
 	this->author = author;
 	this->year = year;
@@ -16,6 +24,10 @@ Publication::Publication(string name, string autor, int year)
 
 void Publication::setName(string name)
 {
+	if (name.empty())
+	{
+		throw new BookException(name);
+	}
 	this->name = name;
 }
 
@@ -26,6 +38,10 @@ void Publication::setAuthor(string author)
 
 void Publication::setYear(int year)
 {
+	if (year < 1000)
+	{
+		throw new EditionYearException(name, year);
+	}
 	this->year = year;
 }
 

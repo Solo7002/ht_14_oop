@@ -36,15 +36,17 @@ string BookException::showMessage() const
 EditionYearException::EditionYearException()
 {
 	name = "nn";
+	year = 2023;
 }
 
-EditionYearException::EditionYearException(string name)
+EditionYearException::EditionYearException(string name, int year)
 	:PublicationException(name)
 {
-
+	this->year = year;
 }
 
 string EditionYearException::showMessage() const
 {
-	return "Year Exception: " + name + "; Error! Undefined year! You can't write that year!";
+	string st_year = (const char*)year;
+	return "Year Exception: " + name + "; Error! Undefined year! You can't write "+st_year+" year!";
 }
