@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include"Publication.h"
 using std::cout;
 using std::cin;
 using std::endl;
