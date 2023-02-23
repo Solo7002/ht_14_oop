@@ -7,6 +7,7 @@ using std::string;
 
 class PublicationException
 {
+protected:
 	string name;
 public:
 	PublicationException();
@@ -16,6 +17,16 @@ public:
 };
 
 
+
+
+class BookException : public PublicationException
+{
+public:
+	BookException();
+	BookException(string name);
+
+	string showMessage()const override;
+};
 
 
 
