@@ -5,6 +5,7 @@
 #include"Exceptions.h"
 #include"Book.h"
 #include"Magazine.h"
+#include"Publication.h"
 using std::cout;
 using std::cin;
 using std::endl;
