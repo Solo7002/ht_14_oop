@@ -8,7 +8,7 @@ Magazine::Magazine()
 }
 
 Magazine::Magazine(string name, string autor, int year)
-	:Publication(name, author, year)
+	:Publication(name, autor, year)
 {
 }
 

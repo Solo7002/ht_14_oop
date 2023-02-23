@@ -9,22 +9,22 @@ Publication::Publication()
 
 Publication::Publication(string name, string autor, int year)
 {
-	if (name.empty())
+	/*if (name == "")
 	{
 		throw new BookException(name);
 	}
 	if (year < 1000)
 	{
 		throw new EditionYearException(name, year);
-	}
+	}*/
 	this->name = name;
-	this->author = author;
+	this->author = autor;
 	this->year = year;
 }
 
 void Publication::setName(string name)
 {
-	if (name.empty())
+	if (name == "")
 	{
 		throw new BookException(name);
 	}

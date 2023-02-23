@@ -9,7 +9,7 @@ Book::Book()
 }
 
 Book::Book(string name, string autor, int year, string resume)
-	:Publication(name, author, year)
+	:Publication(name, autor, year)
 {
 	this->resume = resume;
 }

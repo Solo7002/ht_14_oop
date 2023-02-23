@@ -1,7 +1,7 @@
 #pragma once
 #include"Publication.h"
 
-class Book : Publication 
+class Book : public Publication 
 {
 	string resume;
 public:

@@ -29,7 +29,7 @@ int Library::findName(string name)
 	int index = -1;
 	for (int i = 0; i < arr.size(); i++)
 	{
-		if (this->name == name)
+		if (arr[i]->getName() == name)
 		{
 			index = i;
 			break;
@@ -50,6 +50,13 @@ void Library::findbyName(string name)
 	{
 		cout << "\nError! Undefined name!\n";
 	}
+}
+
+void Library::addStringToMagaz(string name, string str)
+{
+	int index = findName(name);
+	Magazine* pobj = (Magazine*)arr[index];
+	pobj->addSt(str);
 }
 
 void Library::show_info() const
