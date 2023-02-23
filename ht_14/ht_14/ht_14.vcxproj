@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Book.cpp" />
+    <ClCompile Include="Exceptions.cpp" />
     <ClCompile Include="Library.cpp" />
     <ClCompile Include="Magazine.cpp" />
     <ClCompile Include="Publication.cpp" />
@@ -147,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h" />
+    <ClInclude Include="Exceptions.h" />
     <ClInclude Include="Library.h" />
     <ClInclude Include="Magazine.h" />
     <ClInclude Include="Publication.h" />
